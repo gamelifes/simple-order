@@ -1,0 +1,23 @@
+<!--pages/food/food.wxml-->
+<view class='concent'>
+
+  <view class='warp' wx:for='{{list}}' wx:for-item='item'>
+
+    <view class='h2'>{{item.title}}</view>
+
+    <view class='list'>
+
+      <view class='item' wx:for="{{item.list}}" wx:for-item="food" bindtap='goNews' data-id='{{food._id}}'>
+
+        <image src='{{host}}{{food.img_url}}'></image>
+        <text>{{food.title}}</text>
+        <view class='br'></view>
+        <text>${{food.price}}</text>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+

@@ -1,0 +1,35 @@
+/* pages/food/food.wxss */
+
+.concent {
+  background: #f7f7ff;
+}
+
+.h2 {
+  font-size: 60rpx;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .item {
+  width: 33.3%;
+  height: 300rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.list .item image {
+  width: 90%;
+  height: 160rpx;
+  margin: 0 auto;
+}
+
+.list .item image text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20rpx;
+  color: #666;
+}
+

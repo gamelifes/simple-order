@@ -1,0 +1,19 @@
+<!--pages/news/news.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+
+
+  <view class='food-img'>
+    <image src='{{host}}{{list.img_url}}'></image>
+   </view> 
+
+  <view class='h2'>{{list.title}}</view>
+  
+   <view class='food-concent '>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+
+
+
+
+
